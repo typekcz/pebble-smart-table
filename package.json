@@ -1,0 +1,56 @@
+{
+	"name": "pebble-smart-table",
+	"author": "Lukáš Kotržena",
+	"description": "Class time table that will open on next lesson to show you where you have to be.",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/typekcz/pebble-smart-table"
+	},
+	"license": "MIT",
+	"version": "1.0.0",
+	"dependencies": {
+		"pebble-clay": "^1.0.4"
+	},
+	"pebble": {
+		"displayName": "SmartTable",
+		"uuid": "a58af933-4a49-40a0-b4b6-86673ea413d2",
+		"sdkVersion": "3",
+		"enableMultiJS": true,
+		"targetPlatforms": [
+			"aplite",
+			"basalt",
+			"chalk",
+			"diorite"
+		],
+		"capabilities": [
+			"configurable"
+		],
+		"watchapp": {
+			"watchface": false
+		},
+		"messageKeys": [
+			"mon",
+			"tue",
+			"wed",
+			"thu",
+			"fri",
+			"sat",
+			"sun"
+		],
+		"resources": {
+			"media": [
+				{
+					"menuIcon": true,
+					"type": "bitmap",
+					"name": "IMAGE_MENU_ICON",
+					"file": "images/menu_icon.png"
+				},
+				{
+					"type": "bitmap",
+					"name": "CONFIG_REQUIRED",
+					"file": "images/config-required.png"
+				}
+			]
+		}
+	}
+}
